@@ -1,0 +1,385 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #1D1D1D;
+  font-size: 13px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input,
+select {
+  border: 0;
+  outline: 0;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+.header {
+  height: 72px;
+  background: #fff;
+  box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+  margin-bottom: 25px;
+}
+.header__wrapper {
+  max-width: 956px;
+  padding: 0 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: inherit;
+  margin: auto;
+  box-sizing: border-box;
+}
+.header__logo img {
+  display: block;
+  width: 100%;
+  max-width: 115px;
+  min-width: 105px;
+}
+.header__cart {
+  display: none;
+  margin-left: 27px;
+}
+
+.sign-bar-and-cart-wrapper {
+  display: flex;
+}
+
+.sign-bar {
+  display: flex;
+  align-items: center;
+}
+.sign-bar__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-size: 11px;
+  width: 80px;
+  height: 40px;
+}
+.sign-bar__button + .sign-bar__button {
+  margin-left: 16px;
+}
+.sign-bar__button--sign-in {
+  border: 1px solid #E0E0E0;
+}
+.sign-bar__button--register {
+  background: #000;
+  color: #fff;
+}
+
+@media (min-width: 640px) {
+  .header__cart {
+    display: flex;
+    align-items: center;
+  }
+
+  .sign-bar__button {
+    font-size: 13px;
+  }
+}
+.main {
+  margin-bottom: 68px;
+}
+.main__wrapper {
+  max-width: 956px;
+  padding: 0 5px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.restaurant-search-bar {
+  margin-bottom: 24px;
+}
+.restaurant-search-bar label[for=restaurant-search-bar__field] {
+  display: flex;
+  border-bottom: 1px solid #757575;
+}
+.restaurant-search-bar label[for=restaurant-search-bar__field]:before {
+  content: "";
+  display: block;
+  background: url("../images/loupe.png") no-repeat center;
+  height: 40px;
+  width: 40px;
+}
+.restaurant-search-bar__field {
+  width: 100%;
+  border: 0;
+  outline: none;
+}
+
+.catalog-header {
+  margin: 56px 0 14px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+.catalog__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 32px;
+}
+
+.restaurant__photo {
+  display: block;
+}
+.restaurant__photo img {
+  display: block;
+  object-fit: cover;
+  height: 250px;
+  width: 100%;
+  margin-bottom: 16px;
+}
+.restaurant__name {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.restaurant__categories {
+  display: flex;
+  font-size: 14px;
+  line-height: 21px;
+  color: #626262;
+}
+.restaurant__categories__item {
+  display: flex;
+  align-items: center;
+  margin-left: 3px;
+}
+.restaurant__categories__item:before {
+  content: "";
+  height: 3px;
+  width: 3px;
+  background: #626262;
+  display: block;
+  border-radius: 2px;
+  margin-right: 3px;
+}
+.restaurant__categories:before {
+  content: "P";
+}
+.restaurant__time {
+  font-size: 13px;
+  line-height: 21px;
+}
+
+@media (min-width: 640px) {
+  .restaurant-search-bar__field {
+    font-size: 16px;
+  }
+
+  .catalog__wrapper {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+  }
+}
+@media (min-width: 1023px) {
+  .catalog__wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+  }
+}
+.footer {
+  background: #262626;
+  color: #fff;
+}
+.footer a {
+  color: #fff;
+}
+.footer a:hover {
+  opacity: 0.7;
+}
+.footer__wrapper {
+  max-width: 956px;
+  padding: 0 5px;
+  margin: auto;
+  box-sizing: border-box;
+}
+.footer__first-section {
+  padding: 56px 0 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #fff;
+}
+.footer__logo {
+  display: block;
+  max-width: 190px;
+}
+.footer__logo img {
+  display: block;
+  width: 100%;
+}
+.footer__second-section {
+  box-sizing: border-box;
+  padding: 32px 0 48px;
+  border-bottom: 1px solid #fff;
+}
+.footer__third-section {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+}
+.footer__third-section a + a {
+  margin-left: 25px;
+}
+.footer__fourth-section {
+  padding: 40px 0;
+}
+
+.lang-socials {
+  margin-bottom: 44px;
+}
+.lang-socials__lang {
+  appearance: none;
+  -webkit-appearance: none;
+  background: url("../images/globe.png") no-repeat center;
+  background-color: #3B3B3B;
+  height: 40px;
+  width: 173px;
+  color: #fff;
+  margin-bottom: 33px;
+  border: 0;
+  outline: none;
+  padding: 0 20px;
+}
+.lang-socials__hashtag {
+  color: #fff;
+  margin-bottom: 21px;
+  font-size: 16px;
+}
+.lang-socials__hashtag span {
+  color: #49A144;
+}
+.lang-socials__socials-links {
+  display: flex;
+}
+.lang-socials__socials-links__item + li {
+  margin-left: 20px;
+}
+
+.footer__nav__list li + li {
+  margin-top: 21px;
+}
+.footer__nav__list:nth-child(2) {
+  margin-top: 21px;
+}
+
+.footer__license__list li + li {
+  margin-top: 21px;
+}
+
+@media (min-width: 640px) {
+  .footer__second-section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .footer__nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer__nav__list:nth-child(2) {
+    margin-top: 0;
+  }
+  .footer__license__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer__license__list li + li {
+    margin-top: 0;
+  }
+}
+.adress-bar__shipping-time {
+  appearance: none;
+  -webkit-appearance: none;
+  height: 40px;
+  padding: 0 12px;
+  border: 1px solid #E0E0E0;
+}
+.adress-bar label[for=search] {
+  display: flex;
+  border: 1px solid #E0E0E0;
+  box-sizing: border-box;
+  height: 40px;
+}
+.adress-bar label[for=search]:before {
+  content: "";
+  height: 40px;
+  width: 40px;
+  display: block;
+  background: url("../images/location.png") no-repeat center;
+}
+.adress-bar__search {
+  width: 100%;
+}
+.adress-bar span {
+  font-size: 11px;
+}
+
+.adress-bar--main {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 15px;
+  width: 100%;
+}
+.adress-bar--main .search {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.adress-bar--header {
+  margin: 0 20px;
+  display: none;
+  grid-template-columns: auto auto 1fr;
+  column-gap: 10px;
+  align-items: center;
+}
+.adress-bar--header span:nth-child(1) {
+  display: none;
+}
+.adress-bar--header span:nth-child(2) {
+  font-size: 13px;
+  text-transform: lowercase;
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+.adress-bar--header label[for=shipping-time] {
+  grid-column-start: 1;
+}
+.adress-bar--header label[for=search] {
+  grid-column-start: 3;
+}
+
+@media (min-width: 640px) {
+  .adress-bar--header {
+    display: grid;
+  }
+
+  .adress-bar--main {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

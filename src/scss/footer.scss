@@ -1,0 +1,139 @@
+.footer {
+  //Parameters
+  $footer-background: #262626;
+  $footer-text-color: #fff;
+  $section-border: 1px solid #fff;
+  //End of parameters
+  
+  background: $footer-background;
+  color: $footer-text-color;
+
+  a {
+    color: $footer-text-color;
+  }
+
+  a:hover {
+    opacity: 0.7;
+  }
+
+  &__wrapper {
+    max-width: $wrappers-max-width;
+    padding: $wrappers-paddings-for-small-screens;
+    margin: auto;
+    box-sizing: border-box;
+  }
+
+  &__first-section {
+    padding: 56px 0 40px;
+    box-sizing: border-box;
+    border-bottom: $section-border;
+  }
+
+  &__logo {
+    display: block;
+    max-width: 190px;
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__second-section {
+    box-sizing: border-box;
+    padding: 32px 0 48px;
+    border-bottom: $section-border;
+  }
+
+  &__third-section {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: $section-border;
+  }
+
+  &__third-section a + a {
+    margin-left: 25px;
+  }
+
+  &__fourth-section {
+    padding: 40px 0;
+  }
+}
+
+.lang-socials {
+  margin-bottom: 44px;
+
+  &__lang {
+    appearance: none;
+    -webkit-appearance: none;
+    background: url('../images/globe.png') no-repeat center;
+    background-color: #3B3B3B;
+    height: 40px;
+    width: 173px;
+    color: #fff;
+    margin-bottom: 33px;
+    border: 0;
+    outline: none;
+    padding: 0 20px;
+  }
+
+  &__hashtag {
+    color: #fff;
+    margin-bottom: 21px;
+    font-size: 16px;
+    span {
+      color: #49A144;
+    }
+  }
+
+  &__socials-links {
+    display: flex;
+    &__item + li {
+      margin-left: 20px;
+    }
+  }
+}
+
+.footer__nav {
+  &__list li + li{
+   margin-top: 21px; 
+  }
+
+  &__list:nth-child(2) {
+    margin-top: 21px;
+  }
+}
+
+.footer__license {
+  &__list li + li {
+    margin-top: 21px;
+  }
+}
+
+@media (min-width: 640px) {
+  .footer {
+    &__second-section {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
+
+    &__nav {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      &__list:nth-child(2) {
+        margin-top: 0;
+      }
+    }
+
+    &__license__list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      li + li {
+        margin-top: 0;
+      }
+    }
+  }
+}

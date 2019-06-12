@@ -1,0 +1,125 @@
+.main {
+  margin-bottom: 68px;
+
+  &__wrapper {
+    max-width: $wrappers-max-width;
+    padding: $wrappers-paddings-for-small-screens;
+    margin: auto;
+    box-sizing: border-box;
+  }
+}
+
+.restaurant-search-bar {
+  $search-height: 40px;
+  
+  margin-bottom: 24px;
+  
+  label[for="restaurant-search-bar__field"] {
+    display: flex;
+    border-bottom: 1px solid #757575;
+  }
+
+  label[for="restaurant-search-bar__field"]:before {
+    content: "";
+    display: block;
+    background: url('../images/loupe.png') no-repeat center;
+    height: $search-height;
+    width: $search-height;
+  }
+
+  &__field {
+    width: 100%;
+    border: 0;
+    outline: none;
+  }
+}
+
+.catalog-header{
+  margin: 56px 0 14px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+.catalog {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 32px;
+  }
+}
+
+.restaurant {
+  &__photo {
+    display: block;
+    img {
+      display: block;
+      object-fit: cover;
+      height: 250px;
+      width: 100%;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__name {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  &__categories {
+    display: flex;
+    font-size: 14px;
+    line-height: 21px;
+    color: #626262;
+
+    &__item {
+      display: flex;
+      align-items: center;
+      margin-left: 3px;
+    }
+
+    &__item:before {
+      content: "";
+      height: 3px;
+      width: 3px;
+      background: #626262;
+      display: block;
+      border-radius: 2px;
+      margin-right: 3px;
+    }
+  }
+
+  &__categories:before {
+    content: "P";
+  }
+
+  &__time {
+    font-size: 13px;
+    line-height: 21px;
+  }
+}
+
+@media (min-width: 640px) {
+  .restaurant-search-bar {
+    &__field {
+      font-size: 16px;
+    }
+  }
+
+  .catalog {
+    &__wrapper {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 15px;
+    }
+  }
+}
+
+@media (min-width: 1023px) {
+  .catalog {
+    &__wrapper {
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 15px;
+    }
+  }
+}

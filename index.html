@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="header__wrapper">
+      <a href="#" class="header__logo"><img src="./src/images/logo.svg" alt="Uber eats"></a>
+
+      <form action="" class="adress-bar adress-bar--header">
+          <span>When</span>
+          <span>To</span>
+          <label for="shipping-time">
+            <select name="" id="shipping-time" class="adress-bar__shipping-time">
+              <option value="ASAP">ASAP</option>
+            </select>
+          </label>
+          <label for="search">
+            <input type="text" id="search" class="adress-bar__search" placeholder="Your adress here">
+          </label>
+        </form>
+
+      <div class="sign-bar-and-cart-wrapper">
+        <div class="sign-bar">
+          <a href="" class="sign-bar__button sign-bar__button--sign-in">Sign in</a>
+          <a href="" class="sign-bar__button sign-bar__button--register">Register</a>
+        </div>
+        <a class="header__cart"><img src="./src/images/cart.svg" alt="cart"></a>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="main__wrapper">
+
+      <form action="" class="restaurant-search-bar">
+        <label for="restaurant-search-bar__field">
+          <input type="search" 
+                class="restaurant-search-bar__field" 
+                id="restaurant-search-bar__field" 
+                placeholder="Search restaurant or cuisine">
+        </label>
+      </form>
+
+      <form action="" class="adress-bar adress-bar--main">
+        <span>When</span>
+        <span>To</span>
+        <label for="shipping-time">
+          <select name="" id="shipping-time" class="adress-bar__shipping-time">
+            <option value="ASAP">ASAP</option>
+          </select>
+        </label>
+        <label for="search">
+          <input type="text" id="search" class="search" placeholder="Your adress here">
+        </label>
+      </form>
+  
+      <section class="catalog">
+        <h1 class="catalog-header">Moscow restaurants</h1>
+        <div class="catalog__wrapper">
+          <section class="restaurant">
+            <a href="" class="restaurant__photo"><img src="./src/images/1.jpg"></a>
+            <h2 class="restaurant__name">Макдоналдс — Газетный</h2>
+            <ul class="restaurant__categories">
+              <li class="restaurant__categories__item">Бургеры</li>
+            </ul>
+            <p class="restaurant__time">25 - 30 Min</p>
+          </section>
+
+          <section class="restaurant">
+              <a href="" class="restaurant__photo"><img src="./src/images/2.png"></a>
+              <h2 class="restaurant__name">Макдоналдс — Газетный</h2>
+              <ul class="restaurant__categories">
+                <li class="restaurant__categories__item">Бургеры</li>
+              </ul>
+              <p class="restaurant__time">25 - 30 Min</p>
+            </section>
+
+            <section class="restaurant">
+                <a href="" class="restaurant__photo"><img src="./src/images/3.jpg"></a>
+                <h2 class="restaurant__name">Макдоналдс — Газетный</h2>
+                <ul class="restaurant__categories">
+                  <li class="restaurant__categories__item">Бургеры</li>
+                </ul>
+                <p class="restaurant__time">25 - 30 Min</p>
+              </section>
+
+              <section class="restaurant">
+                  <a href="" class="restaurant__photo"><img src="./src/images/4.jpg"></a>
+                  <h2 class="restaurant__name">Макдоналдс — Газетный</h2>
+                  <ul class="restaurant__categories">
+                    <li class="restaurant__categories__item">Бургеры</li>
+                  </ul>
+                  <p class="restaurant__time">25 - 30 Min</p>
+                </section>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__first-section">
+        <a href="" class="footer__logo"><img src="./src/images/white-logo.svg" alt="Uber eats"></a>
+      </div>
+      <section class="footer__second-section">
+        <div class="lang-socials">
+          <select name="lang" class="lang-socials__lang">
+            <option value="English">English</option>
+            <option value="English">Русский</option>
+            <option value="English">Turkey</option>
+          </select>
+          <p class="lang-socials__hashtag"><span>#</span>UberEats</p>
+          <ul class="lang-socials__socials-links">
+            <li class="lang-socials__socials-links__item"><a href=""><img src="./src/images/facebook.png" alt=" "></a></li>
+            <li class="lang-socials__socials-links__item"><a href=""><img src="./src/images/twitter.png" alt=" "></a></li>
+            <li class="lang-socials__socials-links__item"><a href=""><img src="./src/images/instagram.png" alt=" "></a></li>
+          </ul>
+        </div>
+
+        <nav class="footer__nav">
+          <ul class="footer__nav__list">
+            <li><a href="">About UberEats</a></li>
+            <li><a href="">Become a Delivery Partner</a></li>
+            <li><a href="">Become a Restaurant Partner</a></li>
+          </ul>
+          <ul class="footer__nav__list">
+              <li><a href="">See all cities</a></li>
+              <li><a href="">Pricing</a></li>
+              <li><a href="">Help</a></li>
+              <li><a href="">FAQs</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section class="footer__third-section">
+        <a href=""><img src="./src/images/appstore.png" alt="Download on App Store"></a>
+        <a href=""><img src="./src/images/googleplay.png" alt="Download on Google Play"></a>
+      </section>
+      <section class="footer__fourth-section">
+        <ul class="footer__license__list">
+          <li>© 2017 Uber Technologies Inc.</li>
+          <li><a href="">Privacy</a></li>
+          <li><a href="">Terms</a></li>
+        </ul>
+      </section>
+    </div>
+  </footer>
+</body>
+</html>

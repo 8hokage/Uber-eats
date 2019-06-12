@@ -1,0 +1,47 @@
+//Parameters
+$main-font-color: #1D1D1D;
+$second-font-color: #626262;
+$main-font-size: 13px;
+$wrappers-max-width: 956px;
+$wrappers-paddings-for-small-screens: 0 5px;
+//End of parameters
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: $main-font-color;
+  font-size: $main-font-size;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input,
+select {
+  border: 0;
+  outline: 0;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+@import 'header';
+@import 'main';
+@import 'footer';
+@import 'adress-search';
