@@ -31,6 +31,7 @@ a,
 a:visited,
 a:active {
   text-decoration: none;
+  outline: 0;
 }
 
 .header {
@@ -124,8 +125,6 @@ a:active {
 }
 .restaurant-search-bar__field {
   width: 100%;
-  border: 0;
-  outline: none;
 }
 
 .catalog-header {
@@ -184,9 +183,17 @@ a:active {
   line-height: 21px;
 }
 
+.restaurant:nth-last-child(-n+4) {
+  display: none;
+}
+
 @media (min-width: 640px) {
   .restaurant-search-bar__field {
     font-size: 16px;
+  }
+
+  .restaurant:nth-last-child(-n+4) {
+    display: block;
   }
 
   .catalog__wrapper {
@@ -254,15 +261,14 @@ a:active {
 .lang-socials__lang {
   appearance: none;
   -webkit-appearance: none;
-  background: url("../images/globe.png") no-repeat center;
+  background: url("../images/globe.png") no-repeat 16px, url("../images/arrow-down.png") no-repeat 95%;
   background-color: #3B3B3B;
   height: 40px;
   width: 173px;
   color: #fff;
   margin-bottom: 33px;
-  border: 0;
-  outline: none;
-  padding: 0 20px;
+  padding: 12px 48px;
+  text-transform: uppercase;
 }
 .lang-socials__hashtag {
   color: #fff;
@@ -332,6 +338,8 @@ a:active {
 }
 .adress-bar__search {
   width: 100%;
+  padding-right: 8px;
+  box-sizing: border-box;
 }
 .adress-bar span {
   font-size: 11px;

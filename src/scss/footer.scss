@@ -67,15 +67,14 @@
   &__lang {
     appearance: none;
     -webkit-appearance: none;
-    background: url('../images/globe.png') no-repeat center;
+    background: url('../images/globe.png') no-repeat 16px, url('../images/arrow-down.png') no-repeat 95%;
     background-color: #3B3B3B;
     height: 40px;
     width: 173px;
     color: #fff;
     margin-bottom: 33px;
-    border: 0;
-    outline: none;
-    padding: 0 20px;
+    padding: 0 48px;
+    text-transform: uppercase;
   }
 
   &__hashtag {
