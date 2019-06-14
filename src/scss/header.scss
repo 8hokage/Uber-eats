@@ -1,0 +1,88 @@
+$header-height: 72px;
+$header-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+$logo-max-width: 115px;
+$logo-min-width: 105px;
+
+
+.header {
+//End of parameters
+
+  height: $header-height;
+  background: #fff;
+  box-shadow: $header-shadow;
+  margin-bottom: 25px;
+
+  &__wrapper {
+    max-width: $wrappers-max-width;
+    padding: $wrappers-paddings-for-small-screens;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+    margin: auto;
+    box-sizing: border-box;
+  }
+
+  &__logo {
+    img {
+      display: block;
+      width: 100%;
+      max-width: $logo-max-width;
+      min-width: $logo-min-width;
+    }
+
+  }
+
+  &__cart {
+    display: none;
+    margin-left: 27px;
+  }
+}
+
+.sign-bar-and-cart-wrapper {
+  display: flex;
+}
+
+.sign-bar {
+  display: flex;
+  align-items: center;
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 11px;
+    width: 80px;
+    height: 40px;
+
+  }
+
+  &__button + &__button {
+    margin-left: 16px;
+  }
+
+  &__button--sign-in {
+    border: 1px solid #E0E0E0;
+  }
+
+  &__button--register {
+    background: #000;
+    color: #fff;
+  }
+}
+
+@media (min-width: 640px) {
+  .header {
+    &__cart {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .sign-bar {
+    &__button {
+      font-size: 13px;
+    }
+  }
+}
