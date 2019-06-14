@@ -24,12 +24,17 @@ ul {
 input,
 select {
   border: 0;
+  outline: 1px solid #626262;
 }
 
 a,
 a:visited,
 a:active {
   text-decoration: none;
+}
+
+a {
+  outline: 1px solid #626262;
 }
 
 .header {
